@@ -48,32 +48,12 @@ class ViewController: UIViewController {
         
         trueButton.backgroundColor = UIColor.clear
         falseButton.backgroundColor = UIColor.clear
+        if quizBrain.getCuantasPreguntas() == quizBrain.questionNumber + 1
+        {
+            trueButton.isEnabled = false
+            falseButton.isEnabled = false
+            questionLabel.text = "Terminaste!!!!"
+        }
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
